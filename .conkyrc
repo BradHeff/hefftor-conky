@@ -75,7 +75,7 @@ conky.config = {
 
 conky.text = [[
 ${color1}${font Bitstream Vera Sans:size=11:style=Bold}SYSTEM ${hr 1}${font}${color}
-${voffset 40}${image /usr/share/pixmaps/arch-haskell.png -p 0,20 -s 50x50}
+${voffset 40}${image /usr/share/pixmaps/arch-haskell.png -p 0,20 -s 60x58}
 ${voffset -45}$alignr${texeci 3600 lsb_release -sir}
 ${voffset 5}$alignr${texeci 3600 uname -r}
 ${voffset 3}Uptime: $alignr$uptime
