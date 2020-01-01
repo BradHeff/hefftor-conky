@@ -39,10 +39,10 @@ conky.config = {
 	uppercase = false,
 
 	default_color = 'FFFFFF',
-	color1 = 'DDDDDD',
+	color1 = 'FFFFFF',
 	color2 = 'AAAAAA',
 	color3 = '888888',
-	color4 = 'a06083',
+	color4 = 'b69baf',
 
 	lua_load = '~/.lua/scripts/clock_rings.lua',
 	lua_draw_hook_pre = 'clock_rings'
@@ -50,7 +50,7 @@ conky.config = {
 
 conky.text = [[
 ${font Rational Integer:size=12 weight:bold}${color1}${voffset 100}${goto 28}${time %a}${font Rational Integer:size=20}${alignr}${color2}${time %I}:${time %M}${font Rational Integer:size=10}${color3}${time %P}
-${font Rational Integer:size=20 weight:bold}${color1}${time %b}  ${font Rational Integer:size=20}${color2}${time %e}  ${color3}${time %Y}${goto 90}${voffset -12}${color1}${cpugraph 10,80 666666 666666}
+${font Rational Integer:size=20 weight:bold}${color1}${time %b}  ${font Rational Integer:size=20}${color2}${time %e}  ${color3}${time %Y}${goto 90}${voffset -14}${color1}${cpugraph 10,80 666666 666666}
 ${font Ubuntu:size=10}${color4}${goto 32}${voffset -89}${cpu cpu0}%  ${cpu cpu1}% ${cpu cpu2}% ${cpu cpu3}%
 ${goto 70}${font Ubuntu:size=10}${color1}${voffset 65}${top name 1}${alignr}${top cpu 1}%
 ${goto 70}${font Ubuntu:size=10}${color2}${voffset -5}${top name 2}${alignr}${top cpu 2}%
