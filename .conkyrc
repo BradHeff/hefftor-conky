@@ -42,31 +42,32 @@ conky.config = {
 	color1 = 'FFFFFF',
 	color2 = 'AAAAAA',
 	color3 = '888888',
-	color4 = 'b69baf',
+	color4 = 'fae4df',
+	color5 = 'e6d5ec',
 
 	lua_load = '~/.lua/scripts/clock_rings.lua',
 	lua_draw_hook_pre = 'clock_rings'
 }
 
 conky.text = [[
-${font Rational Integer:size=12 weight:bold}${color1}${voffset 100}${goto 28}${time %a}${font Rational Integer:size=20}${alignr}${color2}${time %I}:${time %M}${font Rational Integer:size=10}${color3}${time %P}
-${font Rational Integer:size=20 weight:bold}${color1}${time %b}  ${font Rational Integer:size=20}${color2}${time %e}  ${color3}${time %Y}${goto 90}${voffset -14}${color1}${cpugraph 10,80 666666 666666}
-${font Ubuntu:size=10}${color4}${goto 32}${voffset -89}${cpu cpu0}%  ${cpu cpu1}% ${cpu cpu2}% ${cpu cpu3}%
-${goto 70}${font Ubuntu:size=10}${color1}${voffset 65}${top name 1}${alignr}${top cpu 1}%
+${font Ubuntu:size=10}${color4}${goto 32}${voffset 75}${cpu cpu0}%  ${cpu cpu1}% ${cpu cpu2}% ${cpu cpu3}%
+${font Rational Integer:size=12 weight:bold}${color1}${voffset 10}${goto 28}${time %a}${font Rational Integer:size=20}${alignr}${color2}${time %I}:${time %M}${font Rational Integer:size=10}${color3}${time %P}
+${font Rational Integer:size=20 weight:bold}${voffset 5}${color1}${time %b}  ${font Rational Integer:size=20}${color2}${time %e}  ${color3}${time %Y}${goto 90}${voffset -15}${color5}${cpugraph 10,80 e6d5ec e6d5ec}
+${goto 70}${font Ubuntu:size=10}${color1}${voffset 05}${top name 1}${alignr}${top cpu 1}%
 ${goto 70}${font Ubuntu:size=10}${color2}${voffset -5}${top name 2}${alignr}${top cpu 2}%
 ${goto 70}${font Ubuntu:size=10}${color3}${voffset -5}${top name 3}${alignr}${top cpu 3}%
 
-${font Rational Integer:size=12 weight:bold}${color1}${goto 68}${voffset 38}MEM ${font Ubuntu:size=10}${goto 47}${voffset -15}${color4}${memperc}%
+${font Rational Integer:size=12 weight:bold}${color1}${goto 68}${voffset 16}MEM ${font Ubuntu:size=10}${goto 47}${voffset -15}${color4}${memperc}%
 ${goto 70}${font Ubuntu:size=10}${color1}${voffset 10}${top_mem name 1}${alignr}${top mem 1}%
 ${goto 70}${font Ubuntu:size=10}${color2}${voffset -5}${top_mem name 2}${alignr}${top mem 2}%
 ${goto 70}${font Ubuntu:size=10}${color3}${voffset -5}${top_mem name 3}${alignr}${top mem 3}%
-${alignr}${voffset -70}${memgraph 20,80 666666 666666}
+${alignr}${voffset -70}${memgraph 20,80 e6d5ec e6d5ec}
 
 ${font Rational Integer:size=12 weight:bold}${color1}${goto 68}${voffset 70}DISK ${font Ubuntu:size=10}${goto 47}${voffset -16}${color4}${fs_used_perc /}%
-${alignr}${voffset -20}${diskiograph 20,80 666666 666666}
+${alignr}${voffset -20}${diskiograph 20,80 e6d5ec e6d5ec}
 ${goto 70}${voffset -1}${font Ubuntu:size=10}${color2}Used:${alignr}${fs_used /}
 ${goto 70}${voffset -3}${font Ubuntu:size=10}${color2}Free:${alignr}${fs_free /}
-${font Rational Integer:size=12 weight:bold}${color1}${goto 68}${voffset 55}NET ${font Ubuntu:size=10}${goto 47}${voffset -17}${color4}${downspeed enp9s0} ${alignr}${voffset 0}${downspeedgraph enp9s0 20,80 666666 666666}
+${font Rational Integer:size=12 weight:bold}${color1}${goto 68}${voffset 55}NET ${font Ubuntu:size=10}${goto 47}${voffset -17}${color4}${downspeed enp9s0} ${alignr}${voffset 0}${downspeedgraph enp9s0 20,80 e6d5ec e6d5ec}
 ${voffset -7}${goto 70}${color2}${font Ubuntu:size=10}${color2}${if_up enp9s0}eth:${alignr}${addr enp9s0} ${endif}
 ${voffset -3}${goto 70}${if_up wlp3s0}wlan:${alignr}${addr wlp3s0}${endif}
 ]];
