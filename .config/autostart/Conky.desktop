@@ -2,6 +2,7 @@
 Comment=
 Encoding=UTF-8
 Exec=conky
+Hidden=false
 Name=Conky
 OnlyShowIn=XFCE;
 RunHook=0
