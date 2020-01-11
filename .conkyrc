@@ -34,7 +34,7 @@ conky.config = {
 
 	override_utf8_locale = true,
 	use_xft = true,
-	xftfont = 'caviar dreams:size=8',
+	xftfont = 'Hack:size=8',
 	xftalpha = 0.8,
 	uppercase = false,
 
@@ -50,25 +50,25 @@ conky.config = {
 }
 
 conky.text = [[
-${font Ubuntu:size=10}${color4}${goto 32}${voffset 75}${cpu cpu0}%  ${cpu cpu1}% ${cpu cpu2}% ${cpu cpu3}%
-${font Rational Integer:size=12 weight:bold}${color1}${voffset 10}${goto 28}${time %a}${font Rational Integer:size=20}${alignr}${color2}${time %I}:${time %M}${font Rational Integer:size=10}${color3}${time %P}
-${font Rational Integer:size=20 weight:bold}${voffset 5}${color1}${time %b}  ${font Rational Integer:size=20}${color2}${time %e}  ${color3}${time %Y}${goto 90}${voffset -15}${color5}${cpugraph 10,80 e6d5ec e6d5ec}
-${goto 70}${font Ubuntu:size=10}${color1}${voffset 05}${top name 1}${alignr}${top cpu 1}%
-${goto 70}${font Ubuntu:size=10}${color2}${voffset -5}${top name 2}${alignr}${top cpu 2}%
-${goto 70}${font Ubuntu:size=10}${color3}${voffset -5}${top name 3}${alignr}${top cpu 3}%
+${font Hack:size=10}${color4}${goto 32}${voffset 75}${cpu cpu0}%  ${cpu cpu1}% ${cpu cpu2}% ${cpu cpu3}%
+${font Hack:size=12 weight:bold}${color1}${voffset 10}${goto 28}${time %a}${font Hack:size=20}${alignr}${color2}${time %I}:${time %M}${font Hack:size=10}${color3}${time %P}
+${font Hack:size=20 weight:bold}${voffset 5}${color1}${time %b}  ${font Hack:size=20}${color2}${time %e}  ${color3}${time %Y}${goto 90}${voffset -15}${color5}${cpugraph 10,80 e6d5ec e6d5ec}
+${goto 70}${font Hack:size=10}${color1}${voffset 05}${top name 1}${alignr}${top cpu 1}%
+${goto 70}${font Hack:size=10}${color2}${voffset -5}${top name 2}${alignr}${top cpu 2}%
+${goto 70}${font Hack:size=10}${color3}${voffset -5}${top name 3}${alignr}${top cpu 3}%
 
-${font Rational Integer:size=12 weight:bold}${color1}${goto 68}${voffset 16}MEM ${font Ubuntu:size=10}${goto 47}${voffset -15}${color4}${memperc}%
-${goto 70}${font Ubuntu:size=10}${color1}${voffset 10}${top_mem name 1}${alignr}${top mem 1}%
-${goto 70}${font Ubuntu:size=10}${color2}${voffset -5}${top_mem name 2}${alignr}${top mem 2}%
-${goto 70}${font Ubuntu:size=10}${color3}${voffset -5}${top_mem name 3}${alignr}${top mem 3}%
+${font Hack:size=12 weight:bold}${color1}${goto 68}${voffset 12}MEM ${font Hack:size=10}${goto 47}${voffset -15}${color4}${memperc}%
+${goto 70}${font Hack:size=10}${color1}${voffset 10}${top_mem name 1}${alignr}${top mem 1}%
+${goto 70}${font Hack:size=10}${color2}${voffset -5}${top_mem name 2}${alignr}${top mem 2}%
+${goto 70}${font Hack:size=10}${color3}${voffset -5}${top_mem name 3}${alignr}${top mem 3}%
 ${alignr}${voffset -70}${memgraph 20,80 e6d5ec e6d5ec}
 
-${font Rational Integer:size=12 weight:bold}${color1}${goto 68}${voffset 70}DISK ${font Ubuntu:size=10}${goto 47}${voffset -16}${color4}${fs_used_perc /}%
+${font Hack:size=12 weight:bold}${color1}${goto 68}${voffset 70}DISK ${font Hack:size=10}${goto 47}${voffset -22}${color4}${fs_used_perc /}%
 ${alignr}${voffset -20}${diskiograph 20,80 e6d5ec e6d5ec}
-${goto 70}${voffset -1}${font Ubuntu:size=10}${color2}Used:${alignr}${fs_used /}
-${goto 70}${voffset -3}${font Ubuntu:size=10}${color2}Free:${alignr}${fs_free /}
-${font Rational Integer:size=12 weight:bold}${color1}${goto 68}${voffset 55}NET ${font Ubuntu:size=10}${goto 47}${voffset -17}${color4}${downspeed enp9s0} ${alignr}${voffset 0}${downspeedgraph enp9s0 20,80 e6d5ec e6d5ec}
-${voffset -7}${goto 70}${color2}${font Ubuntu:size=10}${color2}${if_up enp9s0}eth:${alignr}${addr enp9s0} ${endif}
+${goto 70}${voffset -1}${font Hack:size=10}${color2}Used:${alignr}${fs_used /}
+${goto 70}${voffset -3}${font Hack:size=10}${color2}Free:${alignr}${fs_free /}
+${font Hack:size=12 weight:bold}${color1}${goto 68}${voffset 55}NET ${font Hack:size=10}${goto 47}${voffset -22}${color4}${downspeed enp9s0} ${alignr}${voffset 0}${downspeedgraph enp9s0 20,80 e6d5ec e6d5ec}
+${voffset -4}${goto 70}${color2}${font Hack:size=10}${color2}${if_up enp9s0}eth:${alignr}${addr enp9s0} ${endif}
 ${voffset -3}${goto 70}${if_up wlp3s0}wlan:${alignr}${addr wlp3s0}${endif}
 ]];
 
